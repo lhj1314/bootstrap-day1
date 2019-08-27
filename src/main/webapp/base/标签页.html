@@ -1,0 +1,77 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动设备优先-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!--jquery的js包-->
+    <script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+
+    <!--bootstrap的js包-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+  
+    <script>
+       /* $(function () {
+            $("#btn").click(function () {
+                $('#test').tab('show')
+            })
+
+            $('a[data-toggle="tab"]').on('show.bs.tab', function (e) {
+                console.log(e.target) // newly activated tab
+                console.log(e.relatedTarget)  // previous active tab
+            })
+            $('a[data-toggle="tab"]').on('shown.bs.tab', function (e) {
+
+            })
+            $('a[data-toggle="tab"]').on('hide.bs.tab', function (e) {
+
+            })
+            $('a[data-toggle="tab"]').on('hidden.bs.tab', function (e) {
+
+            })
+        })*/
+        
+    </script>
+           
+<!--
+
+模态框  绑定  按钮  data-toggle
+                  data-target
+-->
+</head>
+<body>
+
+
+
+<!--静态标签页-->
+<ul class="nav nav-tabs" role="tablist">
+    <li  class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab"  >Home</a></li>
+    <li ><a href="#profile" id="test" aria-controls="profile" role="tab"  data-toggle="tab" >Profile</a></li>
+    <li class="dropdown">
+        <a href="#" id="myTabDrop1" class="dropdown-toggle" data-toggle="dropdown" >Dropdown <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+        <li><a href="#messages"  data-toggle="tab" >@fat</a></li>
+        <li><a href="#settings"  data-toggle="tab" >@mdo</a></li>
+    </ul>
+    </li>
+
+
+</ul>
+<!--内容区域-->
+<div class="tab-content">
+    <div  class="tab-pane active" id="home">home</div>
+    <div class="tab-pane" id="profile">Profile</div>
+    <div  class="tab-pane" id="messages">Messages</div>
+    <div  class="tab-pane" id="settings">Settings</div>
+</div>
+
+</body>
+</html>

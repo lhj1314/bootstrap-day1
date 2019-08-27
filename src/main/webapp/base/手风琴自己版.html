@@ -1,0 +1,406 @@
+<!doctype html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <!--移动设备优先-->
+    <meta name="viewport"
+          content="width=device-width, user-scalable=no, initial-scale=1.0, maximum-scale=1.0, minimum-scale=1.0">
+    <meta http-equiv="X-UA-Compatible" content="ie=edge">
+
+
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <title>Document</title>
+    <link rel="stylesheet" href="../bootstrap/css/bootstrap.min.css">
+    <!--jquery的js包-->
+    <script src="../bootstrap/js/jquery-3.3.1.min.js"></script>
+
+    <!--bootstrap的js包-->
+    <script src="../bootstrap/js/bootstrap.min.js"></script>
+
+</head>
+<body>
+
+<!--导航条-->
+<nav class="navbar navbar-default">
+    <div class="container-fluid">
+        <div class="navbar-header">
+            <a class="navbar-brand" href="#">BOOT客户管理系统<small>V2.0</small></a>
+        </div>
+        <!--地球-->
+        <ul class="nav navbar-nav navbar-right ">
+
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-signal" aria-hidden="true"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--水滴-->
+        <ul class="nav navbar-nav navbar-right ">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon glyphicon-tint" aria-hidden="true"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                    <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+        <!--无线-->
+        <ul class="nav navbar-nav navbar-right ">
+            <li class="dropdown">
+                <a href="#" class="dropdown-toggle" data-toggle="dropdown" role="button" aria-haspopup="true" aria-expanded="false">
+                    <span class="glyphicon  glyphicon-globe" aria-hidden="true"></span>
+                    <span class="caret"></span>
+                </a>
+                <ul class="dropdown-menu">
+                    <li><a href="#">Action</a></li>
+                    <li><a href="#">Another action</a></li>
+                    <li><a href="#">Something else here</a></li>
+                     <li role="separator" class="divider"></li>
+                    <li><a href="#">Separated link</a></li>
+                </ul>
+            </li>
+        </ul>
+    </div><!-- /.container-fluid -->
+</nav>
+<div class="container-fluid">
+
+    <div class="row">
+        <!--这是左边-->
+        <div class="col-sm-2">
+            <!--输入框组-->
+            <div class="input-group">
+                <input type="text" class="form-control"  aria-describedby="basic-addon2">
+                <span class="input-group-addon" id="basic-addon2">
+             <span class="glyphicon glyphicon-search" aria-hidden="true"></span>
+
+        </span>
+            </div>
+            <br>
+            <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+
+                <!--第一个面板-->
+                <div class="panel panel-default">
+                    <!--面板的头部-->
+                    <div class="panel-heading" role="tab" id="headingTwo">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo"
+                               aria-expanded="true" aria-controls="collapseOne">
+                                客户管理
+                            </a>
+                        </h4>
+                    </div>
+
+                    <!--面板的body-->
+                    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="">用户查询</a></li>
+                            <li class="list-group-item"><a href="#myModal" data-toggle="modal">用户添加</a></li>
+                        </ul>
+                    </div>
+                </div>
+                <!--第一个面板-->
+                <div class="panel panel-default">
+                    <!--面板的头部-->
+                    <div class="panel-heading" role="tab" id="headingOne">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseOne"
+                               aria-expanded="true" aria-controls="collapseOne">
+                                客户拜访
+                            </a>
+                        </h4>
+                    </div>
+                    <!--面板的body-->
+                    <div id="collapseOne" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="">客户查询</a></li>
+                            <li class="list-group-item"><a href="#myModal" data-toggle="modal">客户添加</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+
+
+                <!--第一个面板-->
+                <div class="panel panel-default">
+                    <!--面板的头部-->
+                    <div class="panel-heading" role="tab" id="headingThree">
+                        <h4 class="panel-title">
+                            <a role="button" data-toggle="collapse" data-parent="#accordion" href="#collapseThree"
+                               aria-expanded="true" aria-controls="collapseOne">
+                                系统管理
+                            </a>
+                        </h4>
+                    </div>
+
+                    <!--面板的body-->
+                    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingOne">
+                        <ul class="list-group">
+                            <li class="list-group-item"><a href="">系统查询</a></li>
+                            <li class="list-group-item"><a href="#myModal" data-toggle="modal">系统添加</a></li>
+                        </ul>
+                    </div>
+                </div>
+
+            </div>
+
+        </div>
+        <!--这是右边-->
+        <div class="col-sm-10">
+
+            <div>
+
+                <!-- 标签页 -->
+                <ul class="nav nav-tabs" role="tablist">
+                    <li role="presentation" class="active"><a href="#home" aria-controls="home" role="tab" data-toggle="tab">用户列表</a></li>
+                    <li role="presentation"><a href="#myModal" aria-controls="profile" role="tab" data-toggle="modal">用户添加</a></li>
+                </ul>
+
+                <!-- 标签页 -->
+                <div class="tab-content">
+                    <div role="tabpanel" class="tab-pane active" id="home">
+
+                        <!--输入框组-->
+                        <div class="panel panel-default">
+                            <div class="panel-body">
+                                <form class="form-inline" role="form" >
+                                    <div class="form-group">
+                                        <label for="exampleInputName2">客户名称</label>
+                                        <input type="text" class="form-control" id="exampleInputName2" >
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="example1">客户来源</label>
+
+                                        <select class="form-control" id="example1">
+                                            <option>---请选择---</option>
+                                            <option>北京</option>
+                                            <option>上海</option>
+                                        </select>
+                                        <label for="example2">所属行业</label>
+
+                                        <select class="form-control" id="example2">
+                                            <option>---请选择---</option>
+                                            <option>北京</option>
+                                            <option>上海</option>
+                                        </select>
+                                        <label for="example3">客户级别</label>
+
+                                        <select class="form-control" id="example3">
+                                            <option>---请选择---</option>
+                                            <option>北京</option>
+                                            <option>上海</option>
+                                        </select>
+                                    </div>
+                                    <button type="button" class="btn btn-default btn-primary" >查询</button>
+                                </form>
+                            </div>
+                        </div>
+
+                        <!--面板 面板里面存放 表格-->
+                        <div class="panel panel-default" id="user">
+                            <!-- Default panel contents -->
+                            <div class="panel-heading">用户列表</div>
+
+                            <!-- Table -->
+                            <table class="table table-striped table-bordered ">
+                                <thead>
+                                <tr >
+                                    <th>ID</th>
+                                    <th>客户名称</th>
+                                    <th>客户来源</th>
+                                    <th>客户所属行业</th>
+                                    <th>客户级别</th>
+                                    <th>固定电话</th>
+                                    <th>手机</th>
+                                    <th>操作</th>
+                                </tr>
+                                </thead>
+                                <tbody>
+
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal">修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal">修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal">修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal" >修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal">修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal">修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                <tr >
+                                    <td>1</td>
+                                    <td>小黑</td>
+                                    <td>阿里</td>
+                                    <td>互联网</td>
+                                    <td>普通用户</td>
+                                    <td>047900020</td>
+                                    <td>134343434</td>
+                                    <!--按钮-->
+                                    <td>
+                                        <button type="button" class="btn btn-default btn-primary" data-target="#myModal" data-toggle="modal">修改</button>
+                                        <button type="button" class="btn btn-danger">删除</button>
+                                    </td>
+                                </tr>
+                                </tbody>
+                            </table>
+                        </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!--模态框-->
+<div class="modal fade" id="myModal" tabindex="-1" role="dialog">
+    <div class="modal-dialog" role="document">
+        <div class="modal-content">
+            <div class="modal-header">
+                <button type="button" class="close" data-dismiss="modal" aria-label="Close"><span aria-hidden="true">&times;</span></button>
+                <h4 class="modal-title">用户信息</h4>
+            </div>
+            <div class="modal-body">
+                <!--用户信息-->
+                <form>
+                    <div class="form-group">
+                        <label for="exampleInputEmail1">ID</label>
+                            <input type="email" class="form-control" id="exampleInputEmail1" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputName">客户名称</label>
+                        <input type="password" class="form-control" id="exampleInputName" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputResource">客户来源</label>
+                        <input type="password" class="form-control" id="exampleInputResource" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputDestory">客户所属行业</label>
+                        <input type="password" class="form-control" id="exampleInputDestory" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputSarlary">客户级别</label>
+                        <input type="password" class="form-control" id="exampleInputSarlary" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputPhone">固定电话</label>
+                        <input type="password" class="form-control" id="exampleInputPhone" >
+                    </div>
+                    <div class="form-group">
+                        <label for="exampleInputTel">手机 </label>
+                        <input type="password" class="form-control" id="exampleInputTel" >
+                    </div>
+
+                </form>
+
+            </div>
+            <div class="modal-footer">
+                <button type="button" class="btn btn-default" data-dismiss="modal">Close</button>
+                <button type="button" class="btn btn-primary">Save changes</button>
+            </div>
+        </div><!-- /.modal-content -->
+    </div><!-- /.modal-dialog -->
+</div><!-- /.modal -->
+<!--分页-->
+<nav aria-label="...">
+    <ul class="pagination navbar-right">
+        <li ><a href="#" aria-label="Previous"><span aria-hidden="true">上一页</span></a></li>
+        <li class="active"><a href="#">1 <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">2 <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">3 <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">4 <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#">5 <span class="sr-only">(current)</span></a></li>
+        <li ><a href="#" aria-label="Next"><span aria-hidden="true">下一页</span></a></li>
+    </ul>
+</nav>
+</body>
+</html>
